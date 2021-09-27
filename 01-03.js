@@ -90,22 +90,22 @@ plane.position.set(15, 0, 0);
     
 
 // create a cube
+
 cuboA = []; //Definir un array Unidimensional
-cuboA.push(cubo(4, 4, 4, 0xFFDD00, 'Physical', false));
-cuboA.push(cubo(4, 4, 4, 0xFF0000, 'Standard', false));
 
-
-//cube2 = cubo(4, 4, 4, 0xFF0000, 'Physical', true);
-//cube1 = cubo(4, 4, 4, 0xFF0000, 'Basic', true);
-
+for(var i=0; i<5; i++){
+ cuboA.push(cubo(4, 4, 4, 0xFFDD00, 'Physical', false));
+ cuboA[i].position.set(-4, i*4.2+4, 0)
+}
 
    
 // position the cube
     
-cuboA[0].position.set(-4, 9, 0);
+//cuboA[0].position.set(-4, 9, 0);
 
  
-cuboA[1].position.set(-4, 18, 0);
+//cuboA[1].position.set(-4, 18, 0);
+
 
 //Luz (requerida para el material MeshLambertMaterial)
  light = new THREE.PointLight(0xFFFF00); //  Luz proveniente de un punto en el espacio, 
