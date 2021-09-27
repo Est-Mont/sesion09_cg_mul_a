@@ -95,9 +95,10 @@ cuboA = []; //Definir un array Unidimensional
 
 for(var i=0; i<5; i++){
  cuboA.push(cubo(4, 4, 4, 0xFFDD00, 'Physical', false));
- cuboA[i].position.set(-4, i*4.2+4, 0)
+ cuboA[i].position.set(-4, i*4.2+4, 0); 
+ //cuboA[i].translate(0px, 5px); no funciona de esta manera
 }
-
+//TRANSLATE CONSULTADO DE: https://www.w3schools.com/tags/canvas_translate.asp 
    
 // position the cube
     
